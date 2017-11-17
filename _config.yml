@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: 夜路漫漫
+subtitle: 水深流缓，人贵语迟
 description:
-author: John Doe
-language:
+author: 邸宇飞
+language: zh-CN
 timezone:
 
 # URL
@@ -42,16 +42,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -77,4 +68,6 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:yelunightroad/yelunightroad.github.io.git
+  branch: master
