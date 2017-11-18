@@ -9,8 +9,10 @@ install:
   - npm --version
   - npm install
   - npm install hexo-cli -g
+  - npm install hexo-util --save
 build_script:
   - git clone https://github.com/iissnan/hexo-theme-next themes/next
+  - hexo clean
   - hexo generate
 
 artifacts:
