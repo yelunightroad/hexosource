@@ -71,3 +71,5 @@ deploy:
   type: git
   repo: git@github.com:yelunightroad/yelunightroad.github.io.git
   branch: master
+
+livere_uid: MTAyMC8zMTk2MS84NTI1
