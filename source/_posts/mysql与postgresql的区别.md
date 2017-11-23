@@ -1,7 +1,7 @@
 ---
 title: mysql与postgresql的区别
 date: 2017-11-14 23:11:19
-tags: mysql postgresql
+tags: [mysql,postgresql,greenplum]
 ---
 
 在工作中由于数据量太大时mysql负载的压力，我们引入了greenplum做我们大数据量表格的数据库，选择greenplum的原因是它在解决大数据存储的同时，尽可能的保持了和mysql一样的操作逻辑（同是关系型数据库，使用sql查询），减小了我们的迁移成本，但是尽管如此，greenplum基于的postgresql引擎和mysql还是存在一定的差异，此文对目前遇到的问题进行了记录，以防止以后再次出现同样的问题。
