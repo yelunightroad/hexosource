@@ -347,7 +347,7 @@ han: false
 
 # Disqus
 disqus:
-  enable: true
+  enable: false
   shortname: nightroad
   count: true
 
