@@ -348,7 +348,7 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname:
+  shortname: nightroad
   count: true
 
 # Hypercomments
@@ -378,7 +378,7 @@ valine:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC8zMTk2MS84NTI1
 
 # Baidu Share
 # Available value:
