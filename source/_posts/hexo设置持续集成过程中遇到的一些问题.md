@@ -1,5 +1,5 @@
 ---
-title: yii1.1版本下访问数据库时需要注意的问题
+title: hexo设置持续集成过程中遇到的一些问题
 date: 2017-11-26 19:42:55
 tags: [hexo,CI,git subtree,來必力]
 ---
