@@ -10,6 +10,8 @@ install:
   - npm install
   - npm install hexo-cli -g
   - npm install hexo-util --save
+  - npm install hexo-generator-feed --save
+  - npm install hexo-generator-searchdb --save
 build_script:
   - hexo clean
   - hexo generate

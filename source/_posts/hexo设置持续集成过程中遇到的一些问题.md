@@ -2,6 +2,8 @@
 title: hexo设置持续集成过程中遇到的一些问题
 date: 2017-11-26 19:42:55
 tags: [hexo,CI,git subtree,來必力]
+categories:
+- 博客
 ---
 
 由于hexo d的方式来布置hexo博客不能满足多台计算机编辑以及备份的需求，所以参考[Hexo的版本控制与持续集成](https://formulahendry.github.io/2016/12/04/hexo-ci/)的博客，进行了持续集成的配置，效果显著， 终于可以随时随地的编辑博客了。
