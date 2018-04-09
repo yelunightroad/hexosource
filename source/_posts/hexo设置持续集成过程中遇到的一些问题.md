@@ -28,3 +28,18 @@ git subtree pull --prefix=themes/next  next tags/v5.1.3 --squash
 在切换到5.1.2版本后，我修改了主题配置文件，添加了livere_uid(來必力评论配置，在next主题下配置这一行就可以开启，简单易配置，不翻墙就可以评论，推荐大家使用)，然后尝试切换到5.1.3版本，发现很智能保留了这个配置（两个版本的配置文件是不同的，merge的过程很顺利），所以通过这个方案切换新版本应该是可行的。
 
 这里需要注意的即使代码的第4行，我一开始写的是`git subtree add --prefix=themes/next  next tags/v5.1.2 --squash`，在这样的情况下5.1.2版本的下载倒是没有问题，但是更新到5.1.3时，会提示已经是最新的代码无法更新，相信大多数人还是以稳定版为主，如果不是想折腾一下源码的话，所以推荐按照现在的顺序来配置。
+
+------
+
+更新：
+
+最近持续集成过程中出错，提示node版本太低，参考了这边[博文](https://killerlei.github.io/2017/04/06/hexo-github-AppVeyor%E5%AE%9E%E7%8E%B0%E4%B8%8D%E5%90%8C%E7%94%B5%E8%84%91%E5%86%99%E5%8D%9A%E5%AE%A2/), 在appveyor.xml配置文件中新增
+
+```
+  # Get the latest stable version of Node.js or io.js
+  - ps: Install-Product node $env:nodejs_version
+  # install modules
+  - npm install
+```
+
+也即node更新语句后解决
