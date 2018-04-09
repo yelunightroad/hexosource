@@ -138,7 +138,6 @@ print tf.contrib.learn.run_n(key_parsed)
 
 ```
 `serialized`:
-  ```
   [
     features {
       feature { key: "val" value { float_list { value: [ 0.5, -1.0 ] } } }
@@ -149,24 +148,19 @@ print tf.contrib.learn.run_n(key_parsed)
       feature { key: "ix" value { int64_list { value: [ 42 ] } } }
     }
   ]
-  ```
-  And arguments
-  ```
+  #And arguments
   example_names: ["input0", "input1"],
   features: {
       "sparse": SparseFeature(
           index_key="ix", value_key="val", dtype=tf.float32, size=100),
   }
-  ```
-  Then the output is a dictionary:
-  ```python
+  #Then the output is a dictionary:
   {
     "sparse": SparseTensor(
         indices=[[0, 3], [0, 20], [1, 42]],
         values=[0.5, -1.0, 0.0]
         dense_shape=[2, 100]),
   }
-  ```
 ```
 
 ## 其它相关函数
@@ -292,9 +286,10 @@ message SequenceExample {
 
 没有什么复杂的，只是讨论了数据缺失的可能性，另外需要注意list的长度是否固定取决于解析时的设置，例如使用FixedLenSequenceFeature时就会要求等长。
 
-而tf.parse_single_sequence_example就是解析此种数据格式的，与parse_example大同小异，这里就不展开了，也可以从[参考文献][1]中找到示例代码
+而tf.parse_single_sequence_example就是解析此种数据格式的，与parse_example大同小异，这里就不展开了，也可以从参考资料中找到示例代码
 
 ## 参考资料
 
-[1]: https://blog.csdn.net/u010223750/article/details/70482498 "Tensorflow高阶读写教程"
-[2]: https://github.com/tensorflow/tensorflow/blob/r1.7/tensorflow/python/ops/parsing_ops.py "TensorFlow源码"
+[Tensorflow高阶读写教程](https://blog.csdn.net/u010223750/article/details/70482498)
+
+[TensorFlow源码](https://github.com/tensorflow/tensorflow/blob/r1.7/tensorflow/python/ops/parsing_ops.py)
