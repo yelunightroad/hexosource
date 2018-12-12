@@ -4,14 +4,14 @@ date: 2018-12-12 17:02:15
 tags: [php]
 ---
 
-array_merge是php中的一个常用函数，我在之前也经常使用这个函数，知道有一天我发现我的程序运行的比预想中要慢的多，经过逐行排查发现竟然是array_merge函数惹得祸
+array_merge是php中的一个常用函数，我在之前也经常使用这个函数，直到有一天我发现我的程序运行的比预想中要慢的多，经过逐行排查发现竟然是array_merge函数惹得祸
 
 ```php
 $primes = array();
 while (xxx)
 {
     $data = get_some_data();
-	$primes = array_merge($primes, $data);
+    $primes = array_merge($primes, $data);
 }
 ```
 
